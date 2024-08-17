@@ -3,7 +3,7 @@ import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Reason AI",
+  title: "Reason AI Docs",
   description: "Generative APIs for developers",
   base: "/",
   cleanUrls: true,
