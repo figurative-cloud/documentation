@@ -2,8 +2,8 @@
 layout: references
 
 hero:
-  name: 'Reason AI'
-  text: 'Generative APIs for developers'
+  name: "Reason AI"
+  text: "Generative APIs for developers"
   tagline: Custom AI APIs with external functions in minutes
   actions:
     - theme: brand
@@ -14,7 +14,7 @@ hero:
       link: ./introduction/getting-started
     - theme: alt
       text: Sign up
-      link: https://reasonai.dev/signup
+      link: https://reasonai.dev/auth/signup
 
 features:
   - title: Write prompts as API
