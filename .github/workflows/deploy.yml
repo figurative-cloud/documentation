@@ -45,6 +45,8 @@ jobs:
         run: yarn build
       - name: Copy CNAME file
         run: cp CNAME src/.vitepress/dist/
+      - name: Copy Jekyll config
+        run: cp _config.yml src/.vitepress/dist/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

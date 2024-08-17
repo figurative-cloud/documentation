@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Reason AI",
   description: "Generative APIs for developers",
   base: "/",
+  cleanUrls: true,
   themeConfig: {
     outline: { level: "deep" },
     nav: [
