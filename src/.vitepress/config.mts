@@ -5,7 +5,7 @@ import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 export default defineConfig({
   title: "Reason AI",
   description: "Generative APIs for developers",
-  base: "/documentation",
+  base: "/",
   cleanUrls: true,
   themeConfig: {
     outline: { level: "deep" },
