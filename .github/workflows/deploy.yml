@@ -43,6 +43,8 @@ jobs:
         run: yarn install
       - name: Build with VitePress
         run: yarn build
+      - name: Copy CNAME file
+        run: cp CNAME src/.vitepress/dist/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
