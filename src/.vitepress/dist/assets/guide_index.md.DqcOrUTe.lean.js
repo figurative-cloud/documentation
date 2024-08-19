@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a4 as i}from"./chunks/framework.aUXblELp.js";const p=JSON.parse('{"title":"Guide","description":"","frontmatter":{},"headers":[],"relativePath":"guide/index.md","filePath":"guide/index.md"}'),r={name:"guide/index.md"},n=i("",2),o=[n];function s(d,c,_,l,u,h){return a(),t("div",null,o)}const m=e(r,[["render",s]]);export{p as __pageData,m as default};

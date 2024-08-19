@@ -1,17 +1,15 @@
 ---
-api_name: 'Inference API'
-api_names: 'Inference APIs'
-functions_name: 'Reason Function'
-functions_names: 'Reason Functions'
-cmd: 'reasonai'
-cmd_api: 'api'
-cmd_fn: 'function'
 app_name: 'Reason AI'
+app_name_short: 'Reason'
+func_names: 'Reason Functions'
+func_name: 'Reason Function'
+integral_names: 'Integrals'
+integral_name: 'Integral'
 ---
 
 # Supported Providers
 
-{{$frontmatter.app_name}} supports making requets to several third-party services through [{{$frontmatter.functions_names}}](../functions/create)
+{{$frontmatter.app_name}} supports making requets to several third-party services through [{{$frontmatter.func_names}}](../functions/create)
 
 ## Services
 
@@ -38,5 +36,5 @@ Making calls to these third-party services may require Authentication depending 
 | Custom   | ✓            | ✗               | Later this year |
 
 ::: tip
-See [{{$frontmatter.functions_names}}](../../reference/function) for information on how to use each of these
+See [{{$frontmatter.func_names}}](../../reference/function) for information on how to use each of these
 :::

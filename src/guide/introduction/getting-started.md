@@ -1,17 +1,21 @@
 ---
-api_name_short: 'Inference API'
-api_name: 'Inference APIs'
+app_name: 'Reason AI'
+app_name_short: 'Reason'
+integral_name: 'Integral'
+integral_names: 'Integrals'
+func_name: 'Function'
+func_names: 'Functions'
 ---
 
 # Getting Started
 
 ### Get an account
 
-- Sign up for a [Reason AI account](https://reasonai.dev) account
+- Sign up for a [{{$frontmatter.app_name}} account](https://reasonai.dev) account
 
 ## Try it Online
 
-You can use Reason AI from the [web console](https://reasonai.dev) without any installation
+You can use {{$frontmatter.app_name}} from the [web console](https://reasonai.dev) without any installation
 
 ## Installation
 
@@ -22,7 +26,7 @@ You can use Reason AI from the [web console](https://reasonai.dev) without any i
 - A terminal to run CLI commands
 - An IDE to edit IaC configuration
 
-Reason is available as an npm package:
+{{$frontmatter.app_name}} is available as an npm package:
 ::: code-group
 
 ```bash [npm]
@@ -37,8 +41,8 @@ yarn add reasonai
 
 ### Setup
 
-Reason can be used on its own or as part of an existing project.
-The setup will create a `./reason` directory where everything related to Reason AI will be stored
+{{$frontmatter.app_name}} can be used on its own or as part of an existing project.
+The setup will create a `./reason` directory where everything related to {{$frontmatter.app_name}} will be stored
 
 ::: code-group
 
@@ -56,9 +60,9 @@ You will be taken through a few setup questions:
 
 That's it!, you are all set up.
 
-## Create Your First {{$frontmatter.api_name_short}}
+## Create Your First {{$frontmatter.integral_name}}
 
-To create an {{$frontmatter.api_name_short}}, simply pass in the required parameters and deploy your environment
+To create an {{$frontmatter.integral_name}}, simply pass in the required parameters and deploy your environment
 
 :::tabs key:pref
 == CLI
@@ -77,7 +81,7 @@ reasonai add api
 > Response format: # JSON
 ```
 
-When done, a new API will be created under `./reason/apis/getStarSignAPI` with JSON config similar to the following:
+When done, a new API will be created under `./reason/integrals/getStarSignAPI` with JSON config similar to the following:
 
 ```json
 {
@@ -94,7 +98,7 @@ Great! Now let's run this command to deploy the API so we can start using it:
 reasonai api push
 ```
 
-That's it. Your {{$frontmatter.api_name_short}} is deployed and live
+That's it. Your {{$frontmatter.integral_name}} is deployed and live
 
 ### Testing your API
 
@@ -135,7 +139,7 @@ You should receive results similar to:
 <!-- == Curl -->
 <!---->
 <!-- ```bash -->
-<!-- curl https://reasonai.dev/api/v1/apis -->
+<!-- curl https://reasonai.dev/api/v1/integrals -->
 <!--     -X POST -->
 <!--     -H "Authorization: Bearer xxxxxx" -->
 <!--     - d '{ -->
@@ -150,7 +154,7 @@ You should receive results similar to:
 <!-- == fetch -->
 <!---->
 <!-- ```js -->
-<!-- await fetch('https://reasonai.dev/api/v1/apis', { -->
+<!-- await fetch('https://reasonai.dev/api/v1/integrals', { -->
 <!--   method: 'POST', -->
 <!--   headers: { -->
 <!--     Authorization: 'Beater xxxxxx', -->
@@ -170,14 +174,14 @@ You should receive results similar to:
 ::: tip
 To learn more on effective prompt generations, [click here](../resources/prompt-generation)
 <br/>
-To see the full reference for creating an {{$frontmatter.api_name_short}}, [click here](../../reference/api)
+To see the full reference for creating an {{$frontmatter.integral_name}}, [click here](../../reference/api)
 :::
 
-## Adding functions
+## Adding {{$frontmatter.func_name}}
 
 :::tabs key:pref
 == CLI
-{{$frontmatter.api_name}} can call external functions to perform specific requests. Ensure that your prompt includes instructions on when to call the functions
+{{$frontmatter.integral_names}} can call external functions to perform specific requests. Ensure that your prompt includes instructions on when to call the {{$frontmatter.func_name}}
 First create the function
 
 ```bash
@@ -213,7 +217,7 @@ Modify the function as necessary and deploy when ready
 reasonai function push
 ```
 
-Once your function is ready, you can add it to the {{$frontmatter.api_name_short}} by modifying the config `./reason/apis/yourAPIName/yourAPIName.json`
+Once your function is ready, you can add it to the {{$frontmatter.integral_name}} by modifying the config `./reason/integrals/yourAPIName/yourAPIName.json`
 
 ```js
 {
@@ -246,7 +250,7 @@ After running the setup, the generated file structure should look like this if y
 
 ```
 
-This is an empty Reason project with no functions or APIs. To get started, add an API
+This is an empty {{$frontmatter.app_name_short}} project with no {{$frontmatter.func_names}} or {{$frontmatter.integral_names}} . To get started, add an {{$frontmatter.integral_name}}
 ::: code-group
 
 ```bash [npm]
@@ -261,11 +265,11 @@ yarn reasonai api add
 
 All your configuration goes into separate sub directories under the main reason directory.
 
-E.g after adding a few functions and APIs, you should have something similar to this:
+E.g after adding a few {{$frontmatter.func_names}} and {{$frontmatter.integral_names}}, you should have something similar to this:
 
 ```plaintext
 ./reason
-├── apis/
+├── integrals/
 │   └── weatherAPI/
 │       └── weatherAPI.json
 └── functions/
@@ -277,7 +281,7 @@ E.g after adding a few functions and APIs, you should have something similar to 
 
 ## The Config File
 
-The config file stores the Reason AI configuration as well as your API key login credentials
+The config file stores the {{$frontmatter.app_name}} configuration as well as your API key login credentials
 
 ```json
 {
@@ -306,6 +310,6 @@ The config file stores the Reason AI configuration as well as your API key login
 
 Now that your environment is setup,
 
-- Take a look at the [Concepts](../introduction/concepts) page to better understand how Reason AI works
+- Take a look at the [Concepts](../introduction/concepts) page to better understand how {{$frontmatter.app_name}} works
 - You might also want to look at our [CLI Documentation](../../reference/cli) to learn how it works
 - Or jump straight into our [APIs](../../reference/api) to connect your services

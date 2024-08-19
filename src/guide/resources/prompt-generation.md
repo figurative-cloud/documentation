@@ -1,20 +1,18 @@
 ---
 title: 'CLI Reference'
 app_name: 'Reason AI'
-api_name: 'Inference API'
-api_names: 'Inference APIs'
-functions_name: 'Reason Function'
-functions_names: 'Reason Functions'
-cmd: 'reasonai'
-cmd_api: 'api'
-cmd_fn: 'function'
+app_name_short: 'Reason'
+func_names: 'Reason Functions'
+func_name: 'Reason Function'
+integral_names: 'Integrals'
+integral_name: 'Integral'
 ---
 
 # Prompt Generation
 
-## {{$frontmatter.api_name}} Instruction
+## {{$frontmatter.integral_name}} Instruction
 
-{{$frontmatter.api_name}} requires the instruction field to be properly defined to get the best out of the AI model.
+{{$frontmatter.integral_name}} requires the instruction field to be properly defined to get the best out of the AI model.
 
 ### Prerequites
 
@@ -30,11 +28,11 @@ Also checkout [OpenAI's documentation](https://platform.openai.com/docs/guides/p
 
 ## Example Instructions
 
-Consider the followind scenarios and example Instructions made for the {{$frontmatter.api_name}}
+Consider the followind scenarios and example Instructions made for the {{$frontmatter.integral_name}}
 
 ### 1. Users API
 
-We want to create an {{$frontmatter.api_name}} that handles user information.
+We want to create an {{$frontmatter.integral_name}} that handles user information.
 It can do the following:
 
 - 1. Get a list of users

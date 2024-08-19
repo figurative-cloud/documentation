@@ -1,27 +1,25 @@
 ---
 title: 'Function Configuration'
-api_name: 'Inference API'
-api_names: 'Inference APIs'
-functions_name: 'Reason Function'
-functions_names: 'Reason Functions'
-cmd: 'reasonai'
-cmd_api: 'api'
-cmd_fn: 'function'
 app_name: 'Reason AI'
+app_name_short: 'Reason'
+func_names: 'Reason Functions'
+func_name: 'Reason Function'
+integral_names: 'Integrals'
+integral_name: 'Integral'
 ---
 
-# {{$frontmatter.functions_name}} Configuration
+# {{$frontmatter.func_name}} Configuration
 
-This section shows the {{$frontmatter.functions_name}} configuration object, the fields in it and what values they accept
+This section shows the {{$frontmatter.func_name}} configuration object, the fields in it and what values they accept
 
 ## function
 
-Reference object for configuring an {{$frontmatter.functions_name}}.
+Reference object for configuring an {{$frontmatter.func_name}}.
 We support configurations in both YAML and JSON depending on what you chose when setting up your CLI.
-However, it is recommended to use JSON for {{$frontmatter.functions_names}} since they use JSON schema for the parameters field
+However, it is recommended to use JSON for {{$frontmatter.func_names}} since they use JSON schema for the parameters field
 
 ::: tip
-The model you choose combined with instructions and linked {{$frontmatter.functions_names}} directly contribute to your cost
+The model you choose combined with instructions and linked {{$frontmatter.func_names}} directly contribute to your cost
 Learn to write concie prompts [here](../guide/resources/prompt-generation)
 :::
 
@@ -71,7 +69,7 @@ The invocation field specifies how the function will be called/ invoked
     "type": "rest_api|serverless_function"
 
     // Required: if type === "rest_api"
-    // Use this to provide infor about APIs if your function tye is rest_api
+    // Use this to provide more info about rest_api Functions
     // When a string is passed, it should be a valid URL
     // When the URL object is passed, it should be resolvable to a valid URL
     "rest_api": "string" | {

@@ -1,12 +1,10 @@
 ---
-api_name: 'Inference API'
-api_names: 'Inference APIs'
-functions_name: 'Reason Function'
-functions_names: 'Reason Functions'
-cmd: 'reasonai'
-cmd_api: 'api'
-cmd_fn: 'function'
 app_name: 'Reason AI'
+app_name_short: 'Reason'
+func_names: 'Reason Functions'
+func_name: 'Reason Function'
+integral_names: 'Integrals'
+integral_name: 'Integral'
 ---
 
 # AI Models
@@ -44,5 +42,5 @@ See the respective pages for information on context windows and token costs
 :::
 
 ::: tip
-See [{{$frontmatter.api_names}}](../apis/create) for information on how to use each of these models
+See [{{$frontmatter.integral_names}}](../integrals/create) for information on how to use each of these models
 :::

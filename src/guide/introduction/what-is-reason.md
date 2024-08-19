@@ -1,63 +1,72 @@
-# What is Reason AI
+---
+integral_name: 'Integral'
+integral_names: 'Integrals'
+app_name_short: 'Reason'
+app_name: 'Reason AI'
+func_name: 'Reason Function'
+func_names: 'Reason Functions'
+---
 
-Reason AI is a web and CLI based tool designed to build fast and robust AI-based web APIs.
-Basically, Reason AI takes your IaC configuration, your database, serverless functions and more, and puts them together to form a hub that can handle multiple kinds of user queries
+# What is {{$frontmatter.app_name}}
+
+{{$frontmatter.app_name}} is a web and CLI based tool designed to build fast and robust AI-based web APIs.
+Basically, {{$frontmatter.app_name}} takes your IaC configuration, your database, serverless functions and more, and puts them together to form a hub that can handle multiple kinds of user queries
 
 > [!NOTE]
 > Want to try it now? See the [Quickstart](../introduction/getting-started) section
 
 ## Use cases
 
-> The use cases of Reason AI are only limited by your imagination. Here are a few that we are excited about:
+> The use cases of {{$frontmatter.app_name}} are only limited by your imagination. Here are a few that we are excited about:
 
 - **Report generation:**
 
-  Use Reason functions to feed your data into the API, tell it how you want the results and voila! You have a working reporting endpoint without writing any code
+  Use {{$frontmatter.func_names}} to feed your data into the API, tell it how you want the results and voila! You have a working reporting endpoint without writing any code
 
 - **Chat applications:**
 
-  Reason's API supports threaded responses and streaming that can be used to track conversations.
+  {{$frontmatter.app_name_short}}'s API supports threaded responses and streaming that can be used to track conversations.
   This can be used to power your custom chatbot when combined with custom data training using files, web links or questions
 
 - **Contact forms:**
 
-  You can use Reason AI to submit contact forms, categorise the response, store it in the appropriate database and send out lead emails,
+  You can use {{$frontmatter.app_name}} to submit contact forms, categorise the response, store it in the appropriate database and send out lead emails,
   all from a single API endpoint, while taking advantage of AI capabilities available to you
 
 - **Request chaining:**
 
-  Want to perform a long series of requests? Use a Reason API is the center stage, connect the various functions and write out the steps to complete the whole flow.
-  Reason will call out each function, using its data to call the next and then return the results in text or JSON format
+  Want to perform a long series of requests? Use a {{$frontmatter.app_name_short}} {{$frontmatter.integral_name}} is the center stage, connect the various functions and write out the steps to complete the whole flow.
+  {{$frontmatter.app_name}} will call out each function, using its data to call the next and then return the results in text or JSON format
 
-## Why use Reason API
+## Why use {{$frontmatter.app_name}}
 
-Reason AI promises a single interface to interact with your data.
+{{$frontmatter.app_name}} promises a single interface to interact with your data.
 An interface that includes access to the best AI models, all cloud providers as well as your custom data while reducing development time
 
-Reason AI seeks to deliver on the premise of an LLM OS, where tokens and context windows become the new compute and memory.
+{{$frontmatter.app_name}} seeks to deliver on the premise of an LLM OS, where tokens and context windows become the new compute and memory.
 Join the AI cloud revolution and take advantage of built in features including:
 
 - **_Automatic request logging_** using threads that keep track of user requests, and responses without extra code
 - **_Generative error reporting and logging_** done on the fly just by connecting external storage function
-- **_Built in alarms and notifications_** sent by Reason AI when specific issues are encountered
+- **_Built in alarms and notifications_** sent by {{$frontmatter.app_name}} when specific issues are encountered
 - **_Generative or prepared translations_** to customize responses sent to different customers
-- **_Analytics tracking_** done by passing extra information to the API
+- **_Analytics tracking_** done by passing extra information to the {{$frontmatter.app_name_short}} {{$frontmatter.integral_name}}
 
 ## Built by developers, for developers
 
-> Reason AI is built from the ground up to make for a seamless dev experience. There are several ways to interact with the platform.
+> {{$frontmatter.app_name}} is built from the ground up to make for a seamless dev experience. There are several ways to interact with the platform.
 
-- [Web console:](https://reasonai.dev): While logged in to the web console, you can create and manage APIs as well as functions
-- [CLI Tool](../../reference/cli): Use the CLI tool for a local dev experience. Using IaC configuration, you can create, update and manage your APIs and functions completely out of the browser
+- [Web console:](https://reasonai.dev): While logged in to the web console, you can create and manage {{$frontmatter.integral_name}} as well as {{$frontmatter.func_names}}
+- [CLI Tool](../../reference/cli): Use the CLI tool for a local dev experience. Using IaC configuration, you can create, update and manage {{$frontmatter.integral_names}} and {{$frontmatter.func_names}} completely out of the browser
 - [REST APIs](../../reference/api): We are constantly expanding the capabilities of the REST APIs to allow similar access and customization of your environment
 
 ### A note on performance
 
-Reason APIs are as fast as the underlying model powering the Genrative AI functionalities as well as the speed of the connection to your third party services. For highly performant scenarios, this tool may not be yet ideal
+{{$frontmatter.app_name}} {{$frontmatter.integral_names}} are as fast as the underlying model powering the Genrative AI functionalities as well as the speed of the connection to your third party services. For highly performant scenarios, this tool may not be yet ideal
 
 ## Supported platforms
 
-Reason AI is completely pluggable and supports all cloud providers, Rest APIs and more.
+{{$frontmatter.app_name}} is completely pluggable and supports all cloud providers, Rest APIs and more.
 To make for standardized development, our IaC configuration format is platform agnostic, allowing you to simply fip the switch to move from one provider to the other.
 
 We continuously update the officially supported services that can be connected to the APIs.

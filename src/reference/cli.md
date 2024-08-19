@@ -1,13 +1,14 @@
 ---
 title: 'CLI Reference'
 app_name: 'Reason AI'
-api_name: 'Inference API'
-api_names: 'Inference APIs'
-functions_name: 'Reason Function'
-functions_names: 'Reason Functions'
+app_name_short: 'Reason'
+func_names: 'Reason Functions'
+func_name: 'Reason Function'
+integral_names: 'Integrals'
+integral_name: 'Integral'
 cmd: 'reasonai'
-cmd_api: 'api'
-cmd_fn: 'function'
+cmd_integrals: 'integrals'
+cmd_fn: 'functions'
 ---
 
 # CLI Reference
@@ -32,7 +33,7 @@ None
 
 `{{$frontmatter.cmd}} status`
 
-Run this command to check the status of all {{$frontmatter.api_names}} and {{$frontmatter.functions_names}}
+Run this command to check the status of all {{$frontmatter.integral_names}} and {{$frontmatter.func_names}}
 
 #### Parameters
 
@@ -42,7 +43,7 @@ None
 
 `{{$frontmatter.cmd}} pull`
 
-Run this command to pull all {{$frontmatter.api_names}} and {{$frontmatter.functions_names}} from remote
+Run this command to pull all {{$frontmatter.integral_names}} and {{$frontmatter.func_names}} from remote
 
 #### Parameters
 
@@ -52,7 +53,7 @@ None
 
 `{{$frontmatter.cmd}} pull`
 
-Run this command to deploy all {{$frontmatter.api_names}} and {{$frontmatter.functions_names}} changes
+Run this command to deploy all {{$frontmatter.integral_names}} and {{$frontmatter.func_names}} changes
 
 #### Parameters
 
@@ -61,78 +62,78 @@ None
 <br />
 <br />
 
-# {{$frontmatter.api_names}}
+# {{$frontmatter.integral_names}}
 
-## Creating {{$frontmatter.api_name}}
+## Creating {{$frontmatter.integral_name}}
 
-`{{$frontmatter.cmd}} {{$frontmatter.cmd_api}} add`
+`{{$frontmatter.cmd}} {{$frontmatter.cmd_integrals}} add`
 
-Run this command to initiate the wizard for adding an {{$frontmatter.api_name}}
-
-#### Parameters
-
-None
-
-## Deploying {{$frontmatter.api_name}}
-
-`{{$frontmatter.cmd}} {{$frontmatter.cmd_api}} push`
-
-Run this command to push your local changes for {{$frontmatter.api_names}}
+Run this command to initiate the wizard for adding an {{$frontmatter.integral_name}}
 
 #### Parameters
 
 None
 
-## Checking {{$frontmatter.api_name}} status
+## Deploying {{$frontmatter.integral_name}}
 
-`{{$frontmatter.cmd}} {{$frontmatter.cmd_api}} status`
+`{{$frontmatter.cmd}} {{$frontmatter.cmd_integrals}} push`
 
-Run this command to check the status of {{$frontmatter.api_names}} between local and remote
+Run this command to push your local changes for {{$frontmatter.integral_names}}
 
 #### Parameters
 
 None
 
-## Running {{$frontmatter.api_name}}
+## Checking {{$frontmatter.integral_name}} status
 
-`{{$frontmatter.cmd}} {{$frontmatter.cmd_api}} run <name>`
+`{{$frontmatter.cmd}} {{$frontmatter.cmd_integrals}} status`
 
-Run this command to run the {{$frontmatter.api_names}} with the given name
+Run this command to check the status of {{$frontmatter.integral_names}} between local and remote
 
 #### Parameters
 
-`name`: Name of the {{$frontmatter.api_name}} to run
+None
+
+## Running {{$frontmatter.integral_name}}
+
+`{{$frontmatter.cmd}} {{$frontmatter.cmd_integrals}} run <name>`
+
+Run this command to run the {{$frontmatter.integral_names}} with the given name
+
+#### Parameters
+
+`name`: Name of the {{$frontmatter.integral_name}} to run
 
 <br />
 <br />
 
-# {{$frontmatter.functions_names}}
+# {{$frontmatter.func_names}}
 
-## Creating {{$frontmatter.functions_name}}
+## Creating {{$frontmatter.func_name}}
 
 `{{$frontmatter.cmd}} {{$frontmatter.cmd_fn}} add`
 
-Run this command to initiate the wizard for adding an {{$frontmatter.functions_name}}
+Run this command to initiate the wizard for adding an {{$frontmatter.func_name}}
 
 #### Parameters
 
 None
 
-## Deploying {{$frontmatter.functions_name}}
+## Deploying {{$frontmatter.func_name}}
 
-`{{$frontmatter.cmd}} {{$frontmatter.cmd_api}} push`
+`{{$frontmatter.cmd}} {{$frontmatter.cmd_integrals}} push`
 
-Run this command to push your local changes for {{$frontmatter.functions_name}}
+Run this command to push your local changes for {{$frontmatter.func_name}}
 
 #### Parameters
 
 None
 
-## Checking {{$frontmatter.functions_name}} status
+## Checking {{$frontmatter.func_name}} status
 
-`{{$frontmatter.cmd}} {{$frontmatter.cmd_api}} status`
+`{{$frontmatter.cmd}} {{$frontmatter.cmd_integrals}} status`
 
-Run this command to check the status of {{$frontmatter.functions_names}} between local and remote
+Run this command to check the status of {{$frontmatter.func_names}} between local and remote
 
 #### Parameters
 

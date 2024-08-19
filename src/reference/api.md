@@ -1,25 +1,27 @@
 ---
-api_name: 'Inference API'
-api_names: 'Inference APIs'
-functions_name: 'Reason Function'
-functions_names: 'Reason Functions'
+app_name: 'Reason AI'
+app_name_short: 'Reason'
+func_names: 'Reason Functions'
+func_name: 'Reason Function'
+integral_names: 'Integrals'
+integral_name: 'Integral'
 ---
 
 # API Reference
 
 One endpoint to run them all 💯
 
-## Run {{$frontmatter.api_name}}
+## Run {{$frontmatter.integral_name}}
 
 `POST /api/v1/inference/request`
 
-Runs an {{$frontmatter.api_name}} passing it input and expecting an output
+Runs an {{$frontmatter.integral_name}} passing it input and expecting an output
 
 ### Input Parameters
 
 | Parameter   | Type              | Description                                                                                                                                                            | Required | Default   |
 | ----------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------- |
-| `apiId`     | string            | The id of the {{$frontmatter.api_name}} being used                                                                                                                     | Yes      |           |
+| `apiId`     | string            | The id of the {{$frontmatter.integral_name}} being used                                                                                                                | Yes      |           |
 | `messages`  | `Message`[]       | An array of messages to send to the api                                                                                                                                | Yes      |           |
 | `threadId`  | string, undefined | When passed, the message will be run on the provided thread. if no threadId is provided, each request will create a new thread and return its id                       | No       | undefined |
 | `replyWith` | thread, message   | Specifies how much data to return in reply. if no `replyWith` is provided, it defaults to message. Setting it to thread returns the entire conversation on the thread. | No       | message   |
@@ -45,7 +47,7 @@ Runs an {{$frontmatter.api_name}} passing it input and expecting an output
 
 | Parameter  | Type      | Description                                   |
 | ---------- | --------- | --------------------------------------------- |
-| `id`       | string    | The {{$frontmatter.api_name}} id              |
+| `id`       | string    | The {{$frontmatter.integral_name}} id         |
 | `threadId` | string    | Id of the thread on whicht he request was run |
 | `messages` | `Message` | Object of the message returned                |
 

@@ -1,22 +1,23 @@
 ---
-feature: 'Reason Functions'
-feature_single: 'Reason Function'
-appname: 'Reason AI'
-appname_short: 'Reason'
-api_name: 'Inference APIs'
+app_name: 'Reason AI'
+app_name_short: 'Reason'
+func_names: 'Reason Functions'
+func_name: 'Reason Function'
+integral_names: 'Integrals'
+integral_name: 'Integral'
 ---
 
-# Getting Started with {{$frontmatter.feature}}
+# Getting Started with {{$frontmatter.func_names}}
 
-Use {{$frontmatter.feature}} to inject external services and functionality into your {{$frontmatter.api_name}}.
-Unlike {{$frontmatter.api_name}}, functions are meant to handle single, specific tasks only
+Use {{$frontmatter.func_names}} to inject external services and functionality into your {{$frontmatter.integral_names}}.
+Unlike {{$frontmatter.integral_names}}, functions are meant to handle single, specific tasks only
 
 > [!NOTE]
-> You need to [setup your environment](../introduction/getting-started) before creating {{$frontmatter.feature}}
+> You need to [setup your environment](../introduction/getting-started) before creating {{$frontmatter.func_names}}
 
-## Creating Basic {{$frontmatter.feature}}
+## Creating Basic {{$frontmatter.func_names}}
 
-To create an {{$frontmatter.feature_single}}, pass in the required parameters to the CLI command and deploy.
+To create an {{$frontmatter.func_name}}, pass in the required parameters to the CLI command and deploy.
 Let's go into detail
 
 :::tabs key:pref
@@ -46,7 +47,7 @@ reasonai function add
 > Provide mode of authentication if any, for the external resource
 ```
 
-When done, a new {{$frontmatter.feature_single}} will be created under `./reason/functions/getWeatherTemperatureByCity`
+When done, a new {{$frontmatter.func_name}} will be created under `./reason/functions/getWeatherTemperatureByCity`
 with JSON config similar to the following:
 
 ```json
@@ -70,18 +71,18 @@ with JSON config similar to the following:
 }
 ```
 
-Great! Now let's run this command to deploy the {{$frontmatter.feature_single}} so we can start using it:
+Great! Now let's run this command to deploy the {{$frontmatter.func_name}} so we can start using it:
 
 ```bash
 reasonai function push
 ```
 
-That's it. Your {{$frontmatter.feature}} is deployed and live
+That's it. Your {{$frontmatter.func_names}} is deployed and live
 
 :::
 
 ## Next Steps
 
-Oh bummer, our function doesn't do anything unless it is linked to an {{$frontmatter.api_name}}
+Oh bummer, our function doesn't do anything unless it is linked to an {{$frontmatter.integral_names}}
 
-- You've learned how to create a {{$frontmatter.feature}}, next look at how to [link an existing function](../apis/link) to your {{$frontmatter.api_name}}
+- You've learned how to create a {{$frontmatter.func_names}}, next look at how to [link an existing function](../integrals/link) to your {{$frontmatter.integral_names}}
