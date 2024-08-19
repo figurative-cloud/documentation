@@ -65,9 +65,7 @@ export default defineConfig({
       ],
     },
 
-    socialLinks: [
-      // { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/reasonai' }],
     footer: {
       // message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present Reason AI',
