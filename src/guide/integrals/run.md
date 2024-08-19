@@ -66,7 +66,7 @@ Message:
 With OpenAI models, you can specify the format of the response in the instruction or even the request message
 With Anthropic however, it is best to let a function return the desired response if you are not getting the correct JSON.
 
-Reason Inference Engine attempts to extract json from the response if you have set the responseFormat to JSON on the API
+{{$frontmatter.app_name_short}} {{$frontmatter.integral_name}} attempts to extract json from the response if you have set the responseFormat to JSON on the API
 
 That's it. Your {{$frontmatter.integral_name}} is deployed and live
 

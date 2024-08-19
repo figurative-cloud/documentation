@@ -20,7 +20,7 @@ export default defineConfig({
           base: '/guide',
           items: [
             {
-              text: 'What is Reason API',
+              text: 'What is Reason AI',
               link: '/introduction/what-is-reason',
             },
             {
@@ -34,11 +34,11 @@ export default defineConfig({
           text: 'Tutorials',
           base: '/guide',
           items: [
-            { text: 'Create Inference API', link: '/integrals/create' },
+            { text: 'Create Integral', link: '/integrals/create' },
             { text: 'Create Reason Function', link: '/functions/create' },
-            { text: 'Link Function to API', link: '/integrals/link' },
-            { text: 'Running Inference API', link: '/integrals/run' },
-            { text: 'Update Inference API', link: '/integrals/update' },
+            { text: 'Link Function to Integral', link: '/integrals/link' },
+            { text: 'Running Integral', link: '/integrals/run' },
+            { text: 'Update Integral', link: '/integrals/update' },
           ],
         },
         {
